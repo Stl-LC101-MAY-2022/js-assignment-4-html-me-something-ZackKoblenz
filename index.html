@@ -1,91 +1,106 @@
 <!DOCTYPE html>
 <html>
    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device=width, initial-scale=1.0" />
       <title>Zack Koblenz - Passions</title>
-      <style src="styles.css"></style>
-      <script src="index.js"></script>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <link rel="stylesheet" href="styles.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet">
    </head>
    <body>
       <!-- Write your HTML in this file! -->
       <header>
          <h1>My Passions</h1>
-         <nav>
-            <ul>
-               <li>
-                  <a href="#YouTube">YouTube</a>
+         <nav class="navbar">
+            <div class="navbar__container">
+               <img src="images/pfpic.png" id="navbar__logo" onclick="homeRedirect()">
+            <script>function homeRedirect() { location.replace("index.html")}</script>
+               <div class="navbar__toggle" id="mobile-menu">
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+               </div>
+            <ul class="navbar__menu">
+               <li class="navbar__item">
+                  <a href="Youtube.html" class="navbar__links">YouTube</a>
                </li>
-               <li>
-                  <a href="#Twitch">Twitch</a>
+               <li class="navbar__item">
+                  <a href="twitch.html" class="navbar__links">Twitch</a>
                </li>
-               <li>
-                  <a href="#GraphicDesign">Graphic Design</a>
+               <li class="navbar__item">
+                  <a href="GraphicDesign.html" class="navbar__links">Graphic Design</a>
                </li>
-               <li>
-                  <a href="#Videography">Videography</a>
+               <li class="navbar__item">
+                  <a href="Videography.html" class="navbar__links">Videography</a>
                </li>
-               <li>
-                  <a href="#Technology">Technology</a>
+               <li class="navbar__item">
+                  <a href="Technology.html" class="navbar__links">Technology</a>
                </li>
-               <li>
-                  <a href="#Programming">Programming</a>
+               <li class="navbar__btn">
+                  <a href="Programming.html" class="button">Programming</a>
                </li>
             </ul>
+         </div>
          </nav>
+         <script src="app.js"></script>
       </header>
       <main>
          <article>
             <section>
                <a name="YouTube"></a>
                <h2>YouTube</h2>
-               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda corporis nisi eius inventore quidem ullam cum laudantium iste accusamus eos? Obcaecati perferendis doloremque aperiam adipisci provident repellendus assumenda nostrum nulla!  </p>
+               <p>When I was only 10 years old I found out about the early YouTube. I fell in love with the website extremely early. Watching creators like Bo Burnham, Fred, and Smosh on a daily basis I decided I too wanted to become a content creator. Over the years my taste in content changed, but my passion for the website and content creation did not.</p>
                <figure>
-                  <img src="images/youtube.png">
-                  <figcaption><a href="https://youtube.com/zackkoblenz">My YouTube Page</a></figcaption>
+                  <img src="images/youtube.png" class="flex">
+                  <figcaption class="flex"><a href="https://youtube.com/zackkoblenz">My YouTube Page</a></figcaption>
                </figure>
             </section>
             <section>
                <a name="Twitch"></a>
                <h2>Twitch</h2>
-               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda corporis nisi eius inventore quidem ullam cum laudantium iste accusamus eos? Obcaecati perferendis doloremque aperiam adipisci provident repellendus assumenda nostrum nulla!  </p>
+               <p>When I was about 15 years old I found out about Twitch. At the time I was watching a lot of gaming on YouTube and many of the creators I was engaging with had started promoting their livestreams on Twitch! I created an account and tried streaming myself. I quit pretty quickly, but in 2018 I came back and have been a full-time streamer now for over 4 and a half years!</p>
                <figure>
-                  <img src="images/twitch.png">
-                  <figcaption><a href="https://twitch.tv/zack_ko">My Twitch Page</a></figcaption>
+                  <img src="images/twitch.png" class="flex">
+                  <figcaption class="flex"><a href="https://twitch.tv/zack_ko">My Twitch Page</a></figcaption>
                </figure>   
             </section>
             <section>
                <a name="GraphicDesign"></a>
                <h2>Graphic Design</h2>
-               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda corporis nisi eius inventore quidem ullam cum laudantium iste accusamus eos? Obcaecati perferendis doloremque aperiam adipisci provident repellendus assumenda nostrum nulla!  </p>
+               <p>Like many of my passions, Graphic Design became something I was interested in thanks to my love of YouTube. I learned early on that creating thumbnails, logos, and banners would be an important part of the content creator career I was interested in. I also drew to my early passion for art and found I really enjoyed learning how to create graphics in programs like Photoshop.</p>
                <figure>
-                  <img src="images/logo.png">
-                  <figcaption>My Logo</figcaption>
+                  <img src="images/logo.png" class="flex">
+                  <figcaption class="flex">My Logo</figcaption>
                </figure>
             </section>
             <section>
                <a name="Videography"></a>
                <h2>Videography</h2>
-               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda corporis nisi eius inventore quidem ullam cum laudantium iste accusamus eos? Obcaecati perferendis doloremque aperiam adipisci provident repellendus assumenda nostrum nulla!  </p>
+               <p>When I was in highschool I found a creator on YouTube named Casey Neistat. He introduced me to the idea of videography and I quickly fell in love with cameras and vlogging. Eventually, I went to college for videography to learn more about cinematography, lighting, and editing. (It helps that this was the closest degree to going to school for being a YouTuber!) I eventually worked on a few short films and documentaries that I now have IMDB credits for!</p>
                <figure>
-                  <img src="images/imdb.png">
-                  <figcaption><a href=https://www.imdb.com/name/nm9026108/?ref_=nv_sr_srsg_0>My IMDB Page</a></figcaption>
+                  <img src="images/imdb.png" class="flex">
+                  <figcaption class="flex"><a href=https://www.imdb.com/name/nm9026108/?ref_=nv_sr_srsg_0>My IMDB Page</a></figcaption>
                </figure>
             </section>
             <section>
                <a name="Technology"></a>
                <h2>Technology</h2>
-               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda corporis nisi eius inventore quidem ullam cum laudantium iste accusamus eos? Obcaecati perferendis doloremque aperiam adipisci provident repellendus assumenda nostrum nulla!  </p>
+               <p>When I got interested in gaming youtube I found that recording on my low-powered laptop wasn't something I was capable of. As a result I started researching and digging into the idea of building a gaming computer for cheap. I was in highschool at the time with little funds, so budget was paramount. This early experience with building computers and my love of videography eventually lead me into my love for all things tech. Keyboards, mice, monitors, microphones, cameras, computer hardware, and more!</p>
                <figure>
-                  <img src="images/technology.png">
-                  <figcaption><a href=https://www.imdb.com/name/nm9026108/?ref_=nv_sr_srsg_0>My IMDB Page</a></figcaption>
+                  <img src="images/technology.png" class="flex">
+                  <figcaption class="flex">Credit: <a href="https://www.gloriousgaming.com">Glorious Gaming</a></figcaption>
                </figure>
             </section>
             <section>
                <a name="Programming"></a>
                <h2>Programming</h2>
-               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda corporis nisi eius inventore quidem ullam cum laudantium iste accusamus eos? Obcaecati perferendis doloremque aperiam adipisci provident repellendus assumenda nostrum nulla!  </p>
+               <p>In 9th Grade, about the same time I was working on building my first computer, I had decided I wanted to get into Game Development. I initially wanted to learn how to make my own mods for Minecraft, so I started learning Java. However, Java was a bit difficult for me to wrap my head around at the time so I went to the basics. HTML, CSS, and creating batch files were my earliest forray into programming. In my softmore year of highschool my computer teacher at the time recognized the skills I had with computers and recommended I apply for the limited 'secret' class; Advanced Computer Sciences. I got in! In junior and senior year of highschool I learned many coding languages on Codecademy and also learned about networks! </p>
                <figure>
-                  <img src="images/github.png">
-                  <figcaption><a href=https://github.com/ZackKoblenz>My GitHub Page</a></figcaption>
+                  <img src="images/github.png" class="flex">
+                  <figcaption class="flex"><a href=https://github.com/ZackKoblenz>My GitHub Page</a></figcaption>
                </figure>
             </section>
          </article>
