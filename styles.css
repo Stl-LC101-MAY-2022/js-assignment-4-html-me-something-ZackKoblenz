@@ -3,6 +3,10 @@ header{
     padding: 1em;
 }
 
+footer {
+    text-align: center;
+}
+
 header h1{
     text-align: center;
     color: white;
